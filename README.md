@@ -1,7 +1,7 @@
 # Console
 An easy to setup console for Unity 6 on the new input system.
 
-<img src="https://drive.google.com/uc?id=1UcS_1ouL4ypgntw59lxsclpXZV5smW5W" alt="Console">
+![ConsolePreview](https://github.com/user-attachments/assets/811eb0dc-abc5-414a-a9b8-06ccf3c56574)
 
 # Quick start
 ## Installation
@@ -14,7 +14,7 @@ Great! Try to opening the console, the default key is `~`.
 - To change the appearance of the console, go to the prefab `Console/Prefabs/Console.prefab` and edit what you want.
 - To change the colors of console commands, go to the prefab `Console/Prefabs/Console.prefab` and edit the color variables of the Console.cs script in the Console inspector.
 - To change the start message, when starting the console, go to the prefab `Console/Prefabs/Console.prefab` and edit the Start Message variable of the Console.cs script in the console inspector.
-- To change the switcher key, go to the `Console/Scripts/Switcher.cs` script and change the `Keyboard.current.`**`backquoteKey`**`.wasPressedThisFrame` for any others key.
+- To change the switcher key, go to the `Console/Scripts/Switcher.cs` script and change the `Keyboard.current.backquoteKey.wasPressedThisFrame` for any others key.
 
 # Documentation
 ## Adding message to console
@@ -47,4 +47,4 @@ void Update()
     }
 }
 ```
-Then, when you press the space bar, new message is output to the console with the count number and adds 1 to her.
+Then, when you press the space bar, new message is output to the console with the count number and adds 1 to count.
