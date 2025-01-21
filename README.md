@@ -1,5 +1,5 @@
 # Console
-An easy to setup console for Unity 6 on the new input system
+An easy to setup console for Unity 6 on the new input system.
 
 <img src="https://drive.google.com/uc?id=1UcS_1ouL4ypgntw59lxsclpXZV5smW5W" alt="Console">
 
