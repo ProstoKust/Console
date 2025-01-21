@@ -9,9 +9,6 @@ An easy to setup console for Unity 6 on the new input system.
 2. Download the latest unity package of the console in the releases.
 3. Add console to scene, with add the `Console/Prefabs/ConsoleCanvas.prefab` or you can add the console to an existing Canvas with a `Console/Prefabs/Console.prefab`.
 
-> [!CAUTION]
-> Works only on Unity 6 or higher
-
 Great! Try to opening the console, the default key is **~**
 ## Customization
 - To change the appearance of the console, go to the `Console/Prefabs/Console.prefab` and edit what you want.
@@ -25,6 +22,8 @@ Great! Try to opening the console, the default key is **~**
 To add a message to the console, we will need to use WriteConsole from the Console.cs script.
 
 When using the command `Console.instance.WriteConsole("Hello World!");` in the start method, the console will output the word Hello World! when the console starts working.
+
+If you want to show a message without displaying the time, use `Console.instance.WriteConsoleIgnore("Hello World!");`
 
 For example, if you write:
 ```
@@ -41,9 +40,6 @@ void Update()
 
 Then, when you press the space bar, a new Hello World! message is displayed in the console.
 
-> [!NOTE]
-> You can output anything to the console, just like in Debug.Log
-
 For example, if you write:
 ```
 public int count;
@@ -58,6 +54,8 @@ void Update()
 }
 ```
 Then, when you press the space bar, new message is output to the console with the count number and adds 1 to count.
+
+You can full use Text Mesh Pro text markup
 
 ## Adding command to console
 
@@ -85,3 +83,23 @@ public void write(string Text)
     Debug.Log(Text);
 }
 ```
+
+You can make a simple command to destroy objects.
+```
+[Command(typeof(Transform))]
+public void destroy(Transform Obj)
+{
+    Destroy(Obj.gameObject);
+}
+```
+
+Or you can create command to teleport objects.
+```
+[Command(typeof(Transform), typeof(float), typeof(float), typeof(float))]
+public void teleport(Transform Obj, float x, float y, float z)
+{
+    Obj.position = new Vector3(x,y,z);
+}
+```
+
+If the attributes are invalid input, the command will not be executed, and an attributes error message will appear in the console.
