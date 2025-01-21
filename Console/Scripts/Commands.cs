@@ -27,10 +27,4 @@ public class Commands : MonoBehaviour
     {
         Console.instance.ClearConsole();
     }
-
-    [Command]
-    public void example()
-    {
-        Console.instance.WriteConsole("Hello World!");
-    }
 }
