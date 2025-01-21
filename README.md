@@ -9,6 +9,9 @@ An easy to setup console for Unity 6 on the new input system.
 2. Download the latest unity package of the console in the releases.
 3. Add console to scene, with add the prefab `Console/Prefabs/ConsoleCanvas.prefab` or you can add the console to an existing Canvas with a prefab `Console/Prefabs/Console.prefab`.
 
+> [!CAUTION]
+> Works only on Unity 6 or higher
+
 Great! Try to opening the console, the default key is `~`.
 ## Customization
 - To change the appearance of the console, go to the prefab `Console/Prefabs/Console.prefab` and edit what you want.
