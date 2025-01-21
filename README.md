@@ -32,7 +32,7 @@ void Update()
     }
 }
 ```
-Then, when you press the space bar, a new Hello World! message is displayed in the console
+Then, when you press the space bar, a new Hello World! message is displayed in the console.
 
 You can output anything to the console, as in Debug.Log, for example:
 ```
