@@ -584,9 +584,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7268480520620659612, guid: 3a9830ea760474e45813dc3bc9dce68f, type: 3}
+      propertyPath: m_Size
+      value: 0.788447
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513708707135535467, guid: 3a9830ea760474e45813dc3bc9dce68f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513708707135535467, guid: 3a9830ea760474e45813dc3bc9dce68f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000015258789
+      objectReference: {fileID: 0}
     - target: {fileID: 7673619229695712423, guid: 3a9830ea760474e45813dc3bc9dce68f, type: 3}
       propertyPath: m_Name
       value: ConsoleCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174878068442012941, guid: 3a9830ea760474e45813dc3bc9dce68f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
