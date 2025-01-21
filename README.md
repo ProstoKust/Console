@@ -15,3 +15,36 @@ Great! Try to opening the console, the default key is `~`.
 - To change the colors of console commands, go to the prefab `Console/Prefabs/Console.prefab` and edit the color variables of the Console.cs script in the Console inspector.
 - To change the start message, when starting the console, go to the prefab `Console/Prefabs/Console.prefab` and edit the Start Message variable of the Console.cs script in the console inspector.
 - To change the switcher key, go to the `Console/Scripts/Switcher.cs` script and change the `Keyboard.current.`**`backquoteKey`**`.wasPressedThisFrame` for any others key.
+
+# Documentation
+## Adding message to console
+To add a message to the console, we will need to use WriteConsole from the Console.cs script.
+
+When using the command `Console.instance.WriteConsole("Hello World!");` in the start method, the console will output the word Hello World! when the console starts working.
+
+For example, if you write:
+```
+void Update()
+{
+    if (Keyboard.current.spaceKey.wasPressedThisFrame)
+    {
+        Console.instance.WriteConsole("Hello World!");
+    }
+}
+```
+Then, when you press the space bar, a new Hello World! message is displayed in the console
+
+You can output anything to the console, as in Debug.Log, for example:
+```
+public int count;
+
+void Update()
+{
+    if (Keyboard.current.spaceKey.wasPressedThisFrame)
+    {
+        count++;
+        Console.instance.WriteConsole($"+1\nCurrent Balance is {count}");
+    }
+}
+```
+Then, when you press the space bar, new message is output to the console with the count number and adds 1 to her.
