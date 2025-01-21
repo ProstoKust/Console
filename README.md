@@ -35,6 +35,9 @@ void Update()
     }
 }
 ```
+
+<img src="https://github.com/user-attachments/assets/767a0ab0-2fbc-4adc-a443-c83d5c8df666" width="210" height="75">
+
 Then, when you press the space bar, a new Hello World! message is displayed in the console.
 
 > [!NOTE]
@@ -54,3 +57,30 @@ void Update()
 }
 ```
 Then, when you press the space bar, new message is output to the console with the count number and adds 1 to count.
+
+## Adding command to console
+
+To add a new command, create a public method with the [Command] attribute that contains the actions when the command is invoked.
+
+For example, if you write:
+```
+[Command]
+public void example()
+{
+    Console.instance.WriteConsole("Hello World!");
+}
+```
+The name of the method will be the name of the command. Save the script and try to check if it works.
+
+<img src="https://github.com/user-attachments/assets/1fd3df39-f0f2-4a8c-9830-18ecd5ae4d59" width="355" height="185">
+
+Your command should be added to the list of commands grace the [Command] attribute and when it is called, the actions specified in the method.
+
+You can also create commands with additional attributes, such as text input, which will be displayed in Debug.Log
+```
+[Command(typeof(string))]
+public void write(string Text)
+{
+    Debug.Log(Text);
+}
+```
