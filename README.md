@@ -3,7 +3,7 @@ An easy to setup console for Unity 6 on the new input system.
 
 ![ConsolePreview](https://github.com/user-attachments/assets/811eb0dc-abc5-414a-a9b8-06ccf3c56574)
 
-# Quick start
+# Getting Started
 ## Installation
 1. If your project does not have Text Mesh Pro or Unity Input System, you need to install them if you do not want to break the project.
 2. Download the latest unity package of the console in the releases.
