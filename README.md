@@ -7,16 +7,16 @@ An easy to setup console for Unity 6 on the new input system.
 ## Installation
 1. If your project does not have Text Mesh Pro or Unity Input System, you need to install them if you do not want to break the project.
 2. Download the latest unity package of the console in the releases.
-3. Add console to scene, with add the prefab `Console/Prefabs/ConsoleCanvas.prefab` or you can add the console to an existing Canvas with a prefab `Console/Prefabs/Console.prefab`.
+3. Add console to scene, with add the `Console/Prefabs/ConsoleCanvas.prefab` or you can add the console to an existing Canvas with a `Console/Prefabs/Console.prefab`.
 
 > [!CAUTION]
 > Works only on Unity 6 or higher
 
-Great! Try to opening the console, the default key is `~`.
+Great! Try to opening the console, the default key is **~**
 ## Customization
-- To change the appearance of the console, go to the prefab `Console/Prefabs/Console.prefab` and edit what you want.
-- To change the colors of console commands, go to the prefab `Console/Prefabs/Console.prefab` and edit the color variables of the Console.cs script in the Console inspector.
-- To change the start message, when starting the console, go to the prefab `Console/Prefabs/Console.prefab` and edit the Start Message variable of the Console.cs script in the console inspector.
+- To change the appearance of the console, go to the `Console/Prefabs/Console.prefab` and edit what you want.
+- To change the colors of console commands, go to the `Console/Prefabs/Console.prefab` and edit the color variables of the Console.cs script in the Console inspector.
+- To change the start message, when starting the console, go to the `Console/Prefabs/Console.prefab` and edit the Start Message variable of the Console.cs script in the console inspector.
 - To change the switcher key, go to the `Console/Scripts/Switcher.cs` script and change the `Keyboard.current.backquoteKey.wasPressedThisFrame` for any others key.
 
 # Documentation
@@ -37,7 +37,10 @@ void Update()
 ```
 Then, when you press the space bar, a new Hello World! message is displayed in the console.
 
-You can output anything to the console, as in Debug.Log, for example:
+> [!NOTE]
+> You can output anything to the console, just like in Debug.Log
+
+For example, if you write:
 ```
 public int count;
 
