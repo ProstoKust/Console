@@ -18,6 +18,7 @@ Great! Try to opening the console, the default key is **~**
 - To change the colors of console commands, go to the `Console/Prefabs/Console.prefab` and edit the color variables of the Console.cs script in the Console inspector.
 - To change the start message, when starting the console, go to the `Console/Prefabs/Console.prefab` and edit the Start Message variable of the Console.cs script in the console inspector.
 - To change the switcher key, go to the `Console/Scripts/Switcher.cs` script and change the `Keyboard.current.backquoteKey.wasPressedThisFrame` for any others key.
+- To add a command send button, go to `Console/Prefabs/Console.prefab` and follow the path `Console/Window/Field/Input/Send`, then switch active to true
 
 # Documentation
 ## Adding message to console
