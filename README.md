@@ -36,8 +36,6 @@ void Update()
 }
 ```
 
-<img src="https://github.com/user-attachments/assets/767a0ab0-2fbc-4adc-a443-c83d5c8df666" width="210" height="75">
-
 Then, when you press the space bar, a new Hello World! message is displayed in the console.
 
 For example, if you write:
@@ -70,8 +68,6 @@ public void example()
 }
 ```
 The name of the method will be the name of the command. Save the script and try to check if it works.
-
-<img src="https://github.com/user-attachments/assets/1fd3df39-f0f2-4a8c-9830-18ecd5ae4d59" width="355" height="185">
 
 Your command should be added to the list of commands grace the [Command] attribute and when it is called, the actions specified in the method.
 
