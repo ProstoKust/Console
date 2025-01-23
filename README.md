@@ -53,7 +53,7 @@ void Update()
 ```
 Then, when you press the space bar, new message is output to the console with the count number and adds 1 to count.
 
-You can full use Text Mesh Pro text markup
+You can full use Text Mesh Pro text markup. Find out more here: https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/RichText.html
 
 ## Adding command to console
 
