@@ -1,0 +1,54 @@
+{
+    "name": "ConsoleInputSystem",
+    "maps": [
+        {
+            "name": "Console",
+            "id": "e46b8e98-0722-4334-a1ed-cc2b64ee13f0",
+            "actions": [
+                {
+                    "name": "AppendText",
+                    "type": "Button",
+                    "id": "d3af81b4-ffc0-42ca-b67c-06e6fdab5886",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "InputText",
+                    "type": "Button",
+                    "id": "eb19d486-e5d9-419d-ac6e-3e4a67487aa7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b5b59808-ff43-41ee-9a66-0f3ed1a71f1c",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AppendText",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb439a82-f304-48cf-976d-e1955f4242ec",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InputText",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
