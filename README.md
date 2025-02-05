@@ -7,7 +7,7 @@ An easy to setup console for Unity 6 on the new input system.
 ## Installation
 1. If your project does not have Text Mesh Pro or Unity Input System, you need to install them if you do not want to break the project.
 2. Download the latest unity package of the console in the releases.
-3. Add console to scene, with add the `Console/ReadyConsole.prefab` or you can add the console to an existing Canvas with a `Console/Prefabs/Console.prefab`.
+3. Add console to scene, with add the `Console/ReadyConsole.prefab` or you can add the console to an existing Canvas with a `Console/Prefabs/Console.prefab`
 
 Great! Try to opening the console, the default key is **~**
 ## Customization
