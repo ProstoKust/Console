@@ -26,7 +26,7 @@ When using the command `Console.instance.WriteConsole("Hello World!");` in the s
 If you want to show a message without displaying the time, use `Console.instance.WriteConsoleIgnore("Hello World!");`
 
 For example, if you write:
-```
+```c#
 void Update()
 {
     if (Keyboard.current.spaceKey.wasPressedThisFrame)
@@ -39,7 +39,7 @@ void Update()
 Then, when you press the space bar, a new Hello World! message is displayed in the console.
 
 For example, if you write:
-```
+```c#
 public int count;
 
 void Update()
@@ -60,7 +60,7 @@ You can full use Text Mesh Pro text markup. Find out more here: **https://docs.u
 To add a new command, create a public method with the [Command] attribute that contains the actions when the command is invoked.
 
 For example, if you write:
-```
+```c#
 [Command]
 public void example()
 {
@@ -72,7 +72,7 @@ The name of the method will be the name of the command. Save the script and try 
 Your command should be added to the list of commands grace the [Command] attribute and when it is called, the actions specified in the method.
 
 You can also create commands with additional attributes, such as text input, which will be displayed in Debug.Log
-```
+```c#
 [Command(typeof(string))]
 public void write(string Text)
 {
@@ -81,7 +81,7 @@ public void write(string Text)
 ```
 
 You can make a simple command to destroy objects.
-```
+```c#
 [Command(typeof(Transform))]
 public void destroy(Transform Obj)
 {
@@ -90,7 +90,7 @@ public void destroy(Transform Obj)
 ```
 
 Or you can create command to teleport objects.
-```
+```c#
 [Command(typeof(Transform), typeof(float), typeof(float), typeof(float))]
 public void teleport(Transform Obj, float x, float y, float z)
 {
