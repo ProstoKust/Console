@@ -99,3 +99,13 @@ public void teleport(Transform Obj, float x, float y, float z)
 ```
 
 If the attributes are invalid input, the command will not be executed, and an attributes error message will appear in the console.
+
+## Adding new tab to console
+
+You can add a new button to the menu. To do this, go to `Console/Prefabs/Console.prefab`, then select one of the ready-made buttons in the Dragger child objects, for example, Edit and duplicate it. Then change its name to Example, change the icon in the child Icon object, drag the new button so that it does not overlap with other objects, and set the value of the ToggleTab parameter in OnClick to 2.
+
+Then add a new tab to Tabs. To do this, duplicate Settings in the child object and rename it to Example and delete the added scripts on it, then change it to Window (Example) the object Window (Settings).
+The next thing you need to do is set a new window in Tabs. To do this, go there and select the Tab Manager script in the Tabs object.
+
+Click **+** inside the inspector in the Tab Manager script in the Tab table and drag the Window (Example) into it.
+Great, try to make your content that you want to see in this tab inside the Window (Example) `Field/Content/Viewport`, having previously deleted the remaining objects there.
